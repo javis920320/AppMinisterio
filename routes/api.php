@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 
 Route::group(['middleware' => 'cors'], function(){
 
-    Route ::get('Inspectores','InspectorController@index');
+Route ::get('Inspectores','InspectorController@index');
 
 Route ::get('Inspectores/{id}','InspectorController@show');
 

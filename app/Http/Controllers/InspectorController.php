@@ -9,7 +9,7 @@ use App\Models\Inspectores;
 class InspectorController extends Controller
 {
     //
-
+   
 
     public  function  boot (){
         Shema::defaultStringLength(191);

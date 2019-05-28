@@ -28,7 +28,11 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [],
+            "providers": [
+                "Barryvdh\\Cors\\ServiceProvider"
+                
+            ]
         }
     },
     "autoload": {

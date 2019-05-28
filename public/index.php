@@ -1,7 +1,9 @@
 <?php
-header('Access-Control-Allow-Origin: *');
+
+/*header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
-header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');*/
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
@@ -10,6 +12,12 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
  */
 
 define('LARAVEL_START', microtime(true));
+
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Credentials: true");
+header("Access-Control-Max-Age: 1000");
+header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
+header("Access-Control-Allow-Methods: PUT, POST, GET, OPTIONS, DELETE");
 
 /*
 |--------------------------------------------------------------------------
